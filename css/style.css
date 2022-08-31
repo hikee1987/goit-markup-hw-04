@@ -96,6 +96,7 @@ img {
   color: var(--item-prim-color)
 }
 
+
 .logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -114,7 +115,7 @@ img {
 }
 
 .navi-item {
-  display: block;
+  display: flex;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -123,6 +124,12 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.icon-mail::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../images/images/decor/mail.svg);
 }
 
 .navi .current {
@@ -233,6 +240,17 @@ img {
   padding-bottom: 200px;
 }
 
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid #C4C4C4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../images/main-logo.jpg);
+  background-size: cover;
+}
+
 .hero-title {
   width: 696px;
   font-weight: 900;
@@ -272,7 +290,35 @@ img {
 .post-list {
   display: flex;
   gap: 30px;
- }
+}
+
+.list-item::before {
+  display: inline-block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/images/decor/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/images/decor/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/images/decor/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/images/decor/astronaut.svg);
+}
 
 .post .sub-title {
   font-weight: 700;
