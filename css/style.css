@@ -3,6 +3,7 @@
   --item-bg-color: #ffffff;
   --item-btn-color: #2196F3;
   --item-prim-color: #757575;
+  --item-company-color: #AFB1B8;
 
 }
 
@@ -79,23 +80,51 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.navi-about {
+.header-container {
   display: flex;
 }
 
-.navi {
+.navi-about {
   display: flex;
   margin-right: auto;
-  gap: 50px;
 }
 
 .navi-list {
   display: flex;
   gap: 50px;
-  align-items: center;
-  color: var(--item-prim-color)
 }
 
+.navi-list-contact {
+  display: flex;
+  gap: 50px;
+}
+
+.navi-item-contact {
+  color: var(--item-prim-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navi-link-contact {
+  display: flex;
+  align-items: center;
+}
+
+.icon-mail {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+}
 
 .logo {
   font-family: 'Raleway';
@@ -115,24 +144,17 @@ img {
 }
 
 .navi-item {
-  display: flex;
-  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  color: var(--item-prim-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.icon-mail::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../images/images/decor/mail.svg);
-}
-
-.navi .current {
+.navi-list .current {
   color: var(--item-btn-color);
 }
 
@@ -140,6 +162,8 @@ img {
 .navi-item:focus {
   color: var(--item-btn-color);
 }
+
+
 
 /**
   |============================
@@ -162,6 +186,13 @@ img {
 
 .card-item {
   flex-basis: calc((100% - 30px * 2) / 3);
+  border: 1px solid #EEEEEE;
+
+}
+
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-box {
@@ -293,31 +324,30 @@ img {
 }
 
 .list-item::before {
-  display: inline-block;
+  display: block;
   content: "";
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F5F4FA;
 }
 
 .icon-antenna::before {
-  background-image: url(../images/images/decor/antenna.svg);
+  background-image: url(../images/icon/antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../images/images/decor/clock.svg);
+  background-image: url(../images/icon/clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../images/images/decor/diagram.svg);
+  background-image: url(../images/icon/diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/images/decor/astronaut.svg);
+  background-image: url(../images/icon/astronaut.svg);
 }
 
 .post .sub-title {
@@ -363,6 +393,7 @@ img {
   margin-bottom: 50px;
 }
 
+
 /**
   |============================
   | Team Photos
@@ -401,6 +432,7 @@ img {
   margin-bottom: 30px;
 }
 
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -418,8 +450,65 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--item-prim-color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
+
+.socials-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-color: transparent;
+  border-radius: 50%;
+  color: var(--item-company-color);
+  background-color: var(--item-bg-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--item-bg-color);
+  background-color: var(--item-btn-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+.company-list {
+  display: flex;
+  gap: 30px;
+}
+
+.company-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--item-company-color);
+}
+
+.company-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.company-icon {
+  fill: var(--item-company-color);
+}
+
 
 /**
   |============================
@@ -488,3 +577,16 @@ img {
 .adress .footer-item:focus {
   color: var(--item-btn-color);
 }
+
+/* .wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-socials { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 206px;
+  height: 80px;
+} */
