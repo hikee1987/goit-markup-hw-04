@@ -94,38 +94,6 @@ img {
   gap: 50px;
 }
 
-.navi-list-contact {
-  display: flex;
-  gap: 50px;
-}
-
-.navi-item-contact {
-  color: var(--item-prim-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.navi-link-contact {
-  display: flex;
-  align-items: center;
-}
-
-.icon-mail {
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-}
-
-.icon-phone {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-}
-
 .logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -149,7 +117,7 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--item-prim-color);
+  color: var(--item-tx-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -163,6 +131,31 @@ img {
   color: var(--item-btn-color);
 }
 
+.navi-list-contact {
+  display: flex;
+  gap: 50px;
+}
+
+.navi-item-contact {
+  color: var(--item-prim-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navi-link-contact {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navi-link-contact:hover,
+.navi-link-contact:focus {
+  color: var(--item-btn-color);
+}
 
 
 /**
@@ -578,15 +571,52 @@ img {
   color: var(--item-btn-color);
 }
 
-/* .wrap {
+.footer-list {
   display: flex;
-  align-items: baseline;
+  gap: 10px;
 }
 
-.footer-socials { 
+.footer-wrap {
+  display: flex;
+}
+.footer-socials {
+  display: flex;
+  }
+
+.footer-socials-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+}
+
+.footer-socials-link .footer-socials-item {
+  fill: var(--item-bg-color);
+}
+
+.footer-socials {
+  margin-left: 70px;
   width: 206px;
   height: 80px;
-} */
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--item-bg-color);
+  margin-bottom: 20px;
+}
+.footer-socials-icon {
+  fill: var(--item-bg-color);
+}
+
+.footer-socials-icon:hover {
+  fill: var(--item-btn-color);
+}
