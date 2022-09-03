@@ -126,8 +126,8 @@ img {
   color: var(--item-btn-color);
 }
 
-.navi-item:hover,
-.navi-item:focus {
+.navi-link:hover,
+.navi-link:focus {
   color: var(--item-btn-color);
 }
 
@@ -137,20 +137,12 @@ img {
   |============================
 */
 
-.header-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .navi-list-contact {
   display: flex;
   gap: 50px;
 }
 
 .navi-item-contact {
-  display: flex;
-  /* flex-direction: row-reverse; */
   color: var(--item-prim-color);
   font-weight: 500;
   font-size: 14px;
@@ -160,15 +152,24 @@ img {
   padding-bottom: 32px;
 }
 
+.navi-link-contact {
+  display: flex;
+  align-items: center;
+  }
+
 .contact-icon {
-  margin-top: 2px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.navi-link-contact:hover .contact-icon,
-.navi-link-contact:focus {
+.navi-item-contact:hover,
+.navi-item-contact:focus {
   color: var(--item-btn-color);
+}
+
+.navi-link-contact:hover .contact-icon,
+.navi-link-contact:focus .contact-icon {
+  fill: var(--item-btn-color);
 }
 
 
@@ -513,12 +514,19 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
+
 }
 
+.company-item:hover,
+.company-item:focus {
+  border: 1px solid var(--item-btn-color);
+
+}
 
 .company-link:hover .company-icon,
 .company-link:focus .company-icon {
-  color: var(--item-btn-color);
+  fill: var(--item-btn-color);
+
 }
 
 .company-icon {
@@ -639,7 +647,8 @@ img {
   fill: currentColor;
 }
 
-.footer-socials-item:hover {
+.footer-socials-item:hover,
+.footer-socials-item:focus {
   background-color: var(--item-btn-color);
   color: var(--item-bg-color);
 }
