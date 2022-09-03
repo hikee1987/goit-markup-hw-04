@@ -126,8 +126,8 @@ img {
   color: var(--item-btn-color);
 }
 
-.navi-link:hover,
-.navi-link:focus {
+.navi-item:hover,
+.navi-item:focus {
   color: var(--item-btn-color);
 }
 
@@ -494,6 +494,12 @@ img {
   fill: currentColor;
 }
 
+/**
+  |============================
+  | Company cooperate
+  |============================
+*/
+
 .company-list {
   display: flex;
   gap: 30px;
@@ -526,19 +532,11 @@ img {
 .company-link:hover .company-icon,
 .company-link:focus .company-icon {
   fill: var(--item-btn-color);
-
 }
 
 .company-icon {
   fill: var(--item-company-color);
 }
-
-
-/**
-  |============================
-  | Footer
-  |============================
-*/
 
 .footer {
   font-style: normal;
@@ -606,6 +604,12 @@ img {
 .adress .footer-item:focus {
   color: var(--item-btn-color);
 }
+
+/**
+  |============================
+  | Footer socials
+  |============================
+*/
 
 .footer-socials {
   margin-left: 70px;
