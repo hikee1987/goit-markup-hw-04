@@ -4,7 +4,6 @@
   --item-btn-color: #2196F3;
   --item-prim-color: #757575;
   --item-company-color: #AFB1B8;
-
 }
 
 
@@ -15,14 +14,14 @@ body {
   background-color: var(--item-bg-color);
 }
 
-/**
+/*
   |============================
   | Reset
   |============================
 */
 
 h1,
-post-style h2,
+h2,
 h3,
 ul,
 p {
@@ -63,6 +62,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 
 .section {
@@ -70,12 +70,12 @@ img {
   padding-bottom: 94px;
 }
 
-
-/**
+/*
   |============================
   | Header navigation
   |============================
 */
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -119,6 +119,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--item-tx-color);
   padding-top: 32px;
+}
+
+.navi-link {
   padding-bottom: 32px;
 }
 
@@ -126,12 +129,12 @@ img {
   color: var(--item-btn-color);
 }
 
-.navi-item:hover,
-.navi-item:focus {
+.navi-item:hover .navi-link,
+.navi-item:focus .navi-link {
   color: var(--item-btn-color);
 }
 
-/**
+/*
   |============================
   | Header contact
   |============================
@@ -149,12 +152,13 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
-  padding-bottom: 32px;
 }
+
 
 .navi-link-contact {
   display: flex;
   align-items: center;
+  padding-bottom: 32px;
 }
 
 .contact-icon {
@@ -172,8 +176,7 @@ img {
   fill: var(--item-btn-color);
 }
 
-
-/**
+/*
   |============================
   | Main section page two
   |============================
@@ -201,8 +204,8 @@ img {
   display: block;
 }
 
- .card-item:hover .card-link,
- .card-item:focus .card-link {
+.card-item:hover .card-link,
+.card-item:focus .card-link {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -228,9 +231,7 @@ img {
   color: var(--item-tx-color);
   text-align: center;
   padding: 6px 22px;
-
 }
-
 
 .button:hover,
 .button:focus {
@@ -271,7 +272,7 @@ img {
   color: var(--item-btn-color);
 }
 
-/**
+/*
   |============================
   | Main section page one
   |============================
@@ -290,8 +291,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid #C4C4C4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../images/main-logo.jpg);
+  background-image: linear-gradient (rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/main-logo.jpg);
   background-size: cover;
 }
 
@@ -405,8 +407,7 @@ img {
   margin-bottom: 50px;
 }
 
-
-/**
+/*
   |============================
   | Team Photos
   |============================
@@ -476,13 +477,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 44px;
   height: 44px;
-
   border-color: transparent;
   border-radius: 50%;
-
   color: var(--item-company-color);
   background-color: var(--item-bg-color);
 }
@@ -497,7 +495,7 @@ img {
   fill: currentColor;
 }
 
-/**
+/*
   |============================
   | Company cooperate
   |============================
@@ -523,13 +521,11 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-
 }
 
 .company-item:hover,
 .company-item:focus {
   border: 1px solid var(--item-btn-color);
-
 }
 
 .company-link:hover .company-icon,
@@ -540,6 +536,12 @@ img {
 .company-icon {
   fill: var(--item-company-color);
 }
+
+/*
+  |============================
+  | Footer
+  |============================
+*/
 
 .footer {
   font-style: normal;
@@ -608,7 +610,7 @@ img {
   color: var(--item-btn-color);
 }
 
-/**
+/*
   |============================
   | Footer socials
   |============================
@@ -618,7 +620,7 @@ img {
   margin-left: 70px;
 }
 
-.footer-title {
+.footer-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -626,7 +628,6 @@ img {
   text-transform: uppercase;
   color: var(--item-bg-color);
   margin-bottom: 20px;
-
 }
 
 .footer-list {
@@ -638,13 +639,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 44px;
   height: 44px;
-
   cursor: pointer;
   border-radius: 50%;
-
   color: var(--item-bg-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
