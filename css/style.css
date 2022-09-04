@@ -62,7 +62,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 .section {
@@ -283,18 +282,15 @@ img {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.hero {
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid #C4C4C4;
-  background-image: linear-gradient (rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/main-logo.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -327,7 +323,7 @@ img {
   padding: 10px 32px;
 }
 
-/**
+/*
   |============================
   | Description with posts
   |============================
@@ -382,7 +378,7 @@ img {
   color: var(--item-prim-color);
 }
 
-/**
+/*
   |============================
   | Project
   |============================
