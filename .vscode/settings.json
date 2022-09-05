@@ -115,5 +115,15 @@
     "Orlean",
     "Technoquack"
   ],
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "launch": {
+
+    "configurations": [],
+    "compounds": []
+  },
+  "editor.tokenColorCustomizations": {
+    
+      
+  },
+  "java.showBuildStatusOnStart.enabled": "notification"
 }
